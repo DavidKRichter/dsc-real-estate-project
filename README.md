@@ -1,14 +1,17 @@
 # Recommendations for Selling Your King County Home
 
-In this study, I've produced recommendations for homeowners in King County, WA who are interested in selling their homes.
+In this study, I've produced recommendations for homeowners in King County, WA who are interested in selling their homes. My recommendations answer two important questions that are common among prospective sellers: 
+
+1. Will improvements add value to my home?
+2. Is there a best time of year to sell my home?
 
 ## The Model
 
-Using a data set of homes sold in Kings County between May 2014 and May 2015, I built a linear regression model that predicts home prices based on a variety of factors such as lot size, home condition, and zipcode. In addition to predicting prices, the model also enables us to isolate the specific effects of four types of improvements on home prices and to determine the best time of year for clients to sell their home.
+Using a data set of homes sold in Kings County between May 2014 and May 2015, I built a linear regression model that predicts home prices based on a variety of factors such as lot size, home condition, and zipcode. In addition to predicting prices, the model also enables us to isolate the specific effects of four types of improvements on home prices and to determine the best time of year for clients to sell their homes.
 
-In building my regression model, I included sale month and zipcodes as dummy variables. While sale month didn't have a big effect on the model, the inclusion of zipcodes accounted for decreased the model's variance by 20%. I also ensured that continuous variables (including the target variable, price) were normally distributed by converting them to log values. 
+In building my regression model, I included sale month and zipcodes as dummy variables. While sale month didn't have a big effect on the model, the inclusion of zipcodes decreased the model's variance by 20%. I also ensured that continuous variables (including the target variable, price) were normally distributed by converting them to log values. 
 
-By converting my target variable to log values, coefficients now have to be interpreted as scaling the target variable by a factor of e^(beta_i * x_i). For predictive variables expressed as logarithms, coefficients can be interpreted as scaing the target variable by a factor of x_i^beta_i. This roughly translates to a beta_i% increase in the target variable for every 1% increase in the predictive variable.
+Because I converted my target variable to log values, coefficients should be interpreted as scaling the target variable by a factor of e^(beta_i * x_i). For predictive variables expressed as logarithms, coefficients can be interpreted as scaing the target variable by a factor of x_i^beta_i. This roughly translates to a beta_i% increase in the target variable for every 1% increase in the predictive variable.
 
 ## Validation
 
