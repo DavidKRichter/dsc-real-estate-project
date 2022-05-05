@@ -14,6 +14,8 @@ By converting my target variable to log values, coefficients now have to be inte
 
 The model performed well on a series of kfolds cross-validation tests, accounting for an average of 88% of test data variance. The figure below shows how the model performed on a set of test data representing 25% of the data set after having been trained on the other 75% of the data set. 
 
+![Train Test Plot](images/train_test_plot.png)
+
 ## Effect of Improvements
 
 According to our model, we have 97.5% percent confidence that:
