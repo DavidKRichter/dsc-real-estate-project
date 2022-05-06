@@ -1,9 +1,6 @@
-# Recommendations for Selling Your King County Home
+# How do Improvements Affect the Value of Your King County Home?
 
-In this study, I've produced recommendations for homeowners in King County, WA who are interested in selling their homes. My recommendations answer two important questions that are common among prospective sellers: 
-
-1. Will improvements add value to my home?
-2. Is there a best time of year to sell my home?
+In this study, I've produced recommendations for homeowners in King County, WA who are interested in selling their homes, and want to know how much is worth spending on improvements. While it's obvious that improvements can only increase a home's value, there are many other factors that contribute to the value of a home and therefore limit the amount by which improvements can raise a home's value. 
 
 ## The Model
 
@@ -28,8 +25,5 @@ According to our model, we have 97.5% percent confidence that:
 - 1 additional bathroom: > 4% appreciation
 - 1% increase in living area: > ~0.38% appreciation
 
-By using our model to calculate the current value of a home, we can use the numbers above to calculate the minimum appreciation of a home due to a proposed improvement with 97.5% confidence. Then we can find the risk-adjusted expected value of the improvement by multiplying this amount by 0.975. This expected value is the maximum amount that homeowners should spend on making a given improvement. 
+After using our model to calculate the current value of a home, we can use the numbers above to calculate the minimum appreciation of that home due to a proposed improvement with 97.5% confidence. Then we can find the risk-adjusted expected value of the improvement by multiplying this amount by 0.975. This expected value is the maximum amount that homeowners should spend on making a given improvement. 
 
-## Effect of Sale Month
-
-In addition to determining the expected value of improvements, our regression model also shows that March and April are the best times to sell a home. Homes sold in March go for around 5% more than the January baseline, while homes sold in April go for around 7% more than the January baseline. Based on our model, no other months showed a similar price premium.
